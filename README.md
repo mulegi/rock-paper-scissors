@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Code for the rock paperr scissors game.
+Code for the rock paper scissors game.
