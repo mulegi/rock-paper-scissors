@@ -3,51 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <script src="project.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <script>
-        let choices = ['rock', 'paper', 'scissors'];
-        let humanScore = 0;
-        let computerScore = 0;
-
-        function getComputerChoice(stringArray) {
-            let randomIndex = Math.floor(Math.random() * choices.length)
-            return stringArray[randomIndex]
-        };
-        
-        function getHumanchoice() {
-            let ans = prompt('Rock , Paper, Scissors: ');
-            return ans.toLowerCase();
-        };
-
-        function playRound(humanChoice, computerChoice) {
-            if (humanChoice === computerChoice){
-                console.log(`Computer's choice: ${computerChoice}\n This round is a draw`);
-            }
-            
-            if (humanChoice === "rock" && computerChoice === "scissors") {
-                humanScore++;
-                console.log(`Computer's choice: ${computerChoice}`);
-                console.log(`You win! \n Your score: ${humanScore} \n Computer's score: ${computerScore}`);
-            } else if (humanChoice === "paper" && computerChoice === "rock") {
-                humanScore++;
-                console.log(`Computer's choice: ${computerChoice}`);
-                console.log(`You win! \n Your score: ${humanScore} \n Computer's score: ${computerScore}`);
-            } else if (humanChoice === "scissors" && computerChoice === "paper") {
-                humanScore++;
-                console.log(`Computer's choice: ${computerChoice}`);
-                console.log(`You win! \n Your score: ${humanScore} \n Computer's score: ${computerScore}`);
-            } else {
-                computerScore++;
-                console.log(`Computer's choice: ${computerChoice}`);
-                console.log(`You lose! \n Your score: ${humanScore} \n Computer's score: ${computerScore}`);
-            }
-        }
-        const humanSelection = getHumanchoice();
-        const computerSelection = getComputerChoice(choices);
-
-        playRound(humanSelection, computerSelection)
-    </script>
+    <div id="container"></div>
 </body>
 </html>

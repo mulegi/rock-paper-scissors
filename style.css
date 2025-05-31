@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    color: black;
+    background-color: lightgray;
+    font-weight: bold;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button {
+    color: black;
+    background-color: grey;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+.display-choices {
+    width: 100%;
+    text-align: center;
+}
+
+.result {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+score {
+    width: 100%;
+    text-align: center;
+}
